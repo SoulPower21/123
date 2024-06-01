@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "9abb984c-a590-4299-84fe-7d4103eda89d",
+		"name": "Api Game Of Thrones",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25733365"
+	},
+	"item": [
+		{
+			"name": "Get all Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://anapioficeandfire.com/api/books/",
+					"protocol": "https",
+					"host": [
+						"anapioficeandfire",
+						"com"
+					],
+					"path": [
+						"api",
+						"books",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by title name book",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"authors\": [\r\n            \"George R. R. Martin\"\r\n        ],\r\n        \"characters\": [\r\n            \"https://www.anapioficeandfire.com/api/characters/2\"\r\n        ],\r\n        \"country\": \"United States\",\r\n        \"isbn\": \"978-0553103540\",\r\n        \"mediaType\": \"Hardcover\",\r\n        \"name\": \"A Game of Thrones\",\r\n        \"numberOfPages\": 694,\r\n        \"povCharacters\": [\r\n            \"https://www.anapioficeandfire.com/api/characters/148\"\r\n        ],\r\n        \"publisher\": \"Bantam Books\",\r\n        \"released\": \"1996-08-01T00:00:00\",\r\n        \"url\": \"https://www.anapioficeandfire.com/api/books/1\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://anapioficeandfire.com/api/books/?name=The Hedge Knight",
+					"protocol": "https",
+					"host": [
+						"anapioficeandfire",
+						"com"
+					],
+					"path": [
+						"api",
+						"books",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "The Hedge Knight"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Character by gender",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"aliases\": [\r\n            \"El más buscado\"\r\n        ],\r\n        \"allegiances\": [],\r\n        \"books\": [\r\n            \"https://www.anapioficeandfire.com/api/books/2\"\r\n        ],\r\n        \"born\": \"21/02/2002\",\r\n        \"culture\": \"Braavosi\",\r\n        \"died\": \"\",\r\n        \"father\": \"\",\r\n        \"mother\": \"\",\r\n        \"name\": \"\",\r\n        \"playedBy\": [],\r\n        \"povBooks\": [],\r\n        \"spouse\": \"\",\r\n        \"titles\": [],\r\n        \"tvSeries\": [],\r\n        \"url\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://anapioficeandfire.com/api/books/?country=United States\n",
+					"protocol": "https",
+					"host": [
+						"anapioficeandfire",
+						"com"
+					],
+					"path": [
+						"api",
+						"books",
+						""
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "United States\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get character by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://anapioficeandfire.com/api/books/1",
+					"protocol": "https",
+					"host": [
+						"anapioficeandfire",
+						"com"
+					],
+					"path": [
+						"api",
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Houses",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
