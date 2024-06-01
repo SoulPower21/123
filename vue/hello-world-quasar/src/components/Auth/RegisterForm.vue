@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button></button>
+    <button>123</button>
   </div>
 </template>
 
@@ -9,5 +9,5 @@
 </script>
 
 <style>
-  
+
 </style>
